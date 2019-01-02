@@ -11,10 +11,10 @@ h1, h2{
   margin: 0;
 }
 h1{
-  font-size: 2.5rem;
+  font-size: 2.5rem; /*40px*/
 }
 h2{
-  font-size: 1.2rem;
+  font-size: 1.2rem; /*19.2px*/
   text-transform: capitalize;
 }
 main{
@@ -25,6 +25,87 @@ main{
 img{
   width: 100%;
   display: block;
-  height: 50vh;
+  height: 60vh;
 }
 /*End Global*/
+
+/*Landing*/
+#landing{
+  background-color: #fff;
+}
+#landing-text{
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem 0;
+}
+#landing-text-inner h2{
+  color: #888;
+}
+.btn{
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  margin: 2rem;
+  color: #000;
+  text-decoration: none;
+  transition: background 500ms ease;
+}
+.btn:hover{
+  background: #f4f4f4;
+}
+#header{
+  background-color: rgb(44, 42, 42);
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+}
+#header h3{
+  font-weight: 400;
+  display: inline-block;
+  padding: 0 1rem 0;
+  border-right: 1px dotted white;
+  border-left: 1px dotted white;
+}
+#landing-image{
+  background: url(https://source.unsplash.com/De8wMYoSSBc);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 0 1 60vw;
+}
+.caption{
+  padding: 1rem 0 1rem;
+  text-align: center;
+}
+footer{
+  margin: auto;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #333;
+}
+footer h3{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+/*Screen Sizes 500px and Up*/
+@media(min-width: 500px){
+  #landing{
+    display: flex;
+    height: 100%;
+  }
+  #landing-text, #landing-image{
+    height: 100vh;
+  }
+}
+/*Screen Sizes */
+@media(min-width: 700px){
+  .btn{
+    padding: 1rem 3rem;
+  }
+}
